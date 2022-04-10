@@ -1,1 +1,0 @@
-<view><cu-custom vue-id="5f4da518-1" bgColor="bg-gradual-blue" isBack="{{true}}" bind:__l="__l" vue-slots="{{['backText','content']}}"><view slot="backText">返回</view><view slot="content">选择工厂</view></cu-custom><view style="width:750rpx;"><factory-select vue-id="5f4da518-2" factoryList="{{selectList}}" bind:__l="__l"></factory-select></view></view>
