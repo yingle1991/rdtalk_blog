@@ -3,11 +3,8 @@
 </p>
 
 <p align="center">
-	<a href="https://gitee.com/kevin_chou/qdpz/stargazers" target="_blank">
-		<img src="https://svg.hamm.cn/gitee.svg?type=star&user=kevin_chou&project=qdpz"/>
-	</a>
-	<a href="https://gitee.com/kevin_chou/qdpz/members" target="_blank">
-		<img src="https://svg.hamm.cn/gitee.svg?type=fork&user=kevin_chou&project=qdpz"/>
+	<a href="https://blog.rdtalk.cn" target="_blank">
+		<img src="https://svg.hamm.cn/badge.svg?key=博客&value=rdtalk.cn&color=ff4500&radius=3"/>
 	</a>
 	<img src="https://svg.hamm.cn/badge.svg?key=Platform&value=微信小程序"/>
 </p>
