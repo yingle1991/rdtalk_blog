@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "plate-number": "/components/rdtalk-plate/plate-number"
+  }
+}

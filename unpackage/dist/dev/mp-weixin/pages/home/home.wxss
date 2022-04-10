@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+/*引导添加到我的小程序*/
+/* 文章主题色 */
+/* 文章标签色 */
+/* 
+  Animation 微动画  
+  基于ColorUI组建库的动画模块 by 文晓港 2019年3月26日19:52:28
+ */
+/* css 滤镜 控制黑白底色gif的 */
+.gif-black{  
+  mix-blend-mode: screen;
+}
+.gif-white{  
+  mix-blend-mode: multiply;
+}
+/* Animation css */
+[class*=animation-] {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+}
+.animation-fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear
+}
+.animation-scale-up {
+    -webkit-animation-name: scale-up;
+            animation-name: scale-up
+}
+.animation-scale-down {
+    -webkit-animation-name: scale-down;
+            animation-name: scale-down
+}
+.animation-slide-top {
+    -webkit-animation-name: slide-top;
+            animation-name: slide-top
+}
+.animation-slide-bottom {
+    -webkit-animation-name: slide-bottom;
+            animation-name: slide-bottom
+}
+.animation-slide-left {
+    -webkit-animation-name: slide-left;
+            animation-name: slide-left
+}
+.animation-slide-right {
+    -webkit-animation-name: slide-right;
+            animation-name: slide-right
+}
+.animation-shake {
+    -webkit-animation-name: shake;
+            animation-name: shake
+}
+.animation-reverse {
+    animation-direction: reverse
+}
+@-webkit-keyframes fade {
+0% {
+        opacity: 0
+}
+100% {
+        opacity: 1
+}
+}
+@keyframes fade {
+0% {
+        opacity: 0
+}
+100% {
+        opacity: 1
+}
+}
+@-webkit-keyframes scale-up {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(.2);
+                transform: scale(.2)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@keyframes scale-up {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(.2);
+                transform: scale(.2)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@-webkit-keyframes scale-down {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(1.8);
+                transform: scale(1.8)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@keyframes scale-down {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(1.8);
+                transform: scale(1.8)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@-webkit-keyframes slide-top {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@keyframes slide-top {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@-webkit-keyframes slide-bottom {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@keyframes slide-bottom {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@-webkit-keyframes shake {
+0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+10% {
+        -webkit-transform: translateX(-9px);
+                transform: translateX(-9px)
+}
+20% {
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px)
+}
+30% {
+        -webkit-transform: translateX(-7px);
+                transform: translateX(-7px)
+}
+40% {
+        -webkit-transform: translateX(6px);
+                transform: translateX(6px)
+}
+50% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+}
+60% {
+        -webkit-transform: translateX(4px);
+                transform: translateX(4px)
+}
+70% {
+        -webkit-transform: translateX(-3px);
+                transform: translateX(-3px)
+}
+80% {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px)
+}
+90% {
+        -webkit-transform: translateX(-1px);
+                transform: translateX(-1px)
+}
+}
+@keyframes shake {
+0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+10% {
+        -webkit-transform: translateX(-9px);
+                transform: translateX(-9px)
+}
+20% {
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px)
+}
+30% {
+        -webkit-transform: translateX(-7px);
+                transform: translateX(-7px)
+}
+40% {
+        -webkit-transform: translateX(6px);
+                transform: translateX(6px)
+}
+50% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+}
+60% {
+        -webkit-transform: translateX(4px);
+                transform: translateX(4px)
+}
+70% {
+        -webkit-transform: translateX(-3px);
+                transform: translateX(-3px)
+}
+80% {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px)
+}
+90% {
+        -webkit-transform: translateX(-1px);
+                transform: translateX(-1px)
+}
+}
+@-webkit-keyframes slide-left {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+@keyframes slide-left {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+@-webkit-keyframes slide-right {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+@keyframes slide-right {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+.page {
+  height: 90%;
+  bottom: 200px;
+  padding-bottom: 200px;
+}
+/* 引导添加到我的小程序 */
+.addMyMiniapp {
+  color: #fff;
+  line-height: 1.2;
+  background: #118fff;
+  padding: 24rpx 24rpx;
+  border-radius: 12rpx;
+  position: fixed;
+  right: 110rpx;
+  z-index: 999;
+  box-shadow: 0 16rpx 30rpx -12rpx #ccc;
+}
+.addMyMiniapp > view {
+  font-size: 24rpx;
+  font-weight: 500;
+}
+.addMyMiniapp > text {
+  font-size: 20rpx;
+  font-weight: 200;
+}
+.addMyMiniapp::before {
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  background: #118fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  right: 30rpx;
+  top: -10rpx;
+}
+.cent-wz-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0rpx 28rpx 24rpx 28rpx;
+  align-items: center;
+}
+.cent-wz-f {
+  margin: 8rpx 28rpx;
+  color: #3d4e82;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 28rpx;
+}
+.cent-wz-h {
+  margin: 14rpx 28rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cnet-img-w {
+  height: 188rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  overflow: hidden;
+}
+.cent-dw {
+  position: relative;
+  border-radius: 20rpx;
+  border: 1px #fff solid;
+  box-shadow: -3rpx 0rpx 10rpx #ccc;
+}
+.cent-dw .cate_meta {
+  position: absolute;
+  padding: 8rpx 20rpx;
+  background: #fff;
+  border-radius: 14rpx;
+  font-size: 25rpx;
+  margin-right: 24rpx;
+  font-weight: 700;
+  color: #000;
+  top: 24rpx;
+  right: 0;
+  box-shadow: 0 0 10rpx rgba(204, 204, 204, 0.377);
+}
+.cent-div {
+  margin-top: 50rpx;
+  margin-bottom: 9rpx;
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+/* 标题 */
+.index-h-all {
+  color: #909399;
+  font-size: 400;
+  font-size: 28rpx;
+}
+.index-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rpx 30rpx 0rpx 30rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.index-h-blue {
+  color: #118fff;
+}
+.ma-60 {
+  margin-top: 50rpx;
+}
+/* 轮播 */
+.uni-margin-wrap {
+  width: 690rpx;
+  margin: 0 30rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+.swiper {
+  height: 400rpx;
+}
+.swiper-item {
+  display: block;
+  height: 340rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  /* box-shadow:0px 5px 15px rgba(0,0,0,0.16); */
+  position: relative;
+}
+.fr-swiper-img {
+  width: 100%;
+  height: 100%;
+}
+.fr-swiper-cent {
+  position: absolute;
+  z-index: 2;
+  bottom: 28rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+  -webkit-backdrop-filter: blur(90px);
+  backdrop-filter: blur(90px);
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  width: 65%;
+  margin-left: 15%;
+  padding: 10rpx 20rpx;
+}
+.fr-swiper-ff {
+  color: #fff;
+  width: 88%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.fr-yuan-d {
+  position: absolute;
+  right: 20rpx;
+  top: 16rpx;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  overflow: hidden;
+}
+/* 精选栏目菜单导航 */
+.fr-gju-dx {
+  width: 156rpx;
+  height: 156rpx;
+  border-radius: 6rpx;
+  background: #f5f7f7;
+}
+.fr-gju-img {
+  height: 100rpx;
+  width: 100rpx;
+}
+.selected-nav {
+  margin: 0rpx 26rpx;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+}
+.selected-nav-list {
+  display: flex;
+  padding: 8rpx 20rpx 8rpx 20rpx;
+  justify-content: space-between;
+}
+.selected-nav-item {
+  margin-right: 16rpx;
+  text-align: center;
+  width: 150rpx;
+}
+.selected-nav-item text {
+  line-height: 26rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #333;
+  margin-top: -10rpx;
+  display: block;
+}
+.post-data image {
+  width: 24rpx;
+  vertical-align: middle;
+}
+.post-data text {
+  font-size: 20rpx;
+  color: #909399;
+  margin-right: 10rpx;
+  margin-left: 4rpx;
+}
+.loadingmore,
+.showerror {
+  margin: 20rpx 0;
+  color: #909399;
+  text-align: center;
+}
+

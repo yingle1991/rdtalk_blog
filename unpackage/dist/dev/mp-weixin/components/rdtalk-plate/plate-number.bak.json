@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "plate-keyboard": "/components/rdtalk-plate/plate-keyboard"
+  }
+}

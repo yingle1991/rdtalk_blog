@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/basics/security",
+    "pages/location/location/location",
+    "pages/auth/login",
+    "pages/home/home",
+    "pages/blog/articles/articles"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "乐子侃生活",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取附近信息"
+    }
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "home": "/pages/home/home",
+    "basics": "/pages/basics/home",
+    "user": "/pages/my/home",
+    "temp-loading": "/pages/template/loading"
+  }
+}
