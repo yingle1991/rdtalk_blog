@@ -33,6 +33,7 @@ Vue.prototype.$mRoutesConfig = $mRoutesConfig;
 Vue.prototype.$mRouter = $mRouter;
 Vue.prototype.dateUtil = dateUtil;
 
+
 // 全局 Util
 import {
 	msg,

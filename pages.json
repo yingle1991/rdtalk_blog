@@ -51,6 +51,12 @@
             "path" : "pages/blog/articles/articles",
             "style" :                                                                                    
             {
+				// #ifdef APP-PLUS || H5 || MP-WEIXIN || MP-QQ
+				"usingComponents": {
+					"towxml": "/wxcomponents/towxml/towxml",
+					"decode": "/wxcomponents/towxml/decode"
+				},
+				// #endif
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }

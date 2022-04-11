@@ -22,7 +22,15 @@
 		    </view>
 		    </view>
 		  </view>
+		  
+		<!-- #ifdef MP-BAIDU || H5 || MP-ALIPAY -->
 		<mp-html :content="htmlText.content" preview-img />
+		<!-- #endif -->
+		
+		<!-- #ifdef APP-PLUS  || MP-WEIXIN || MP-QQ -->
+		<towxml :nodes="article"/>
+		<!-- #endif -->
+		
 		<view class="footer_copyright">
 		  <view class="item_f"><text>文章作者:</text>{{author_d.name}}</view>
 		  <view class="item_f"><text>文章链接:</text><text class="nav_a" bindtap="Nav_a" data-con="1">{{"https://"+author_d.domain}}</text></view>
@@ -41,6 +49,9 @@
 		getArticleDetail
 	} from '@/api/blog/blog.js'
 	import mpHtml from '@/components/mp-html/mp-html'
+	// #ifdef APP-PLUS || H5 || MP-WEIXIN || MP-QQ
+	import towxml from '@/wxcomponents/towxml/index.js'
+	// #endif
 	export default {
 		components: {
 		 mpHtml
@@ -49,7 +60,8 @@
 			return {
 				 isLoding: false,
 				htmlText: '',
-				author_d: {}
+				author_d: {},
+				article:"",
 			}
 		},
 		onLoad(options) {
@@ -71,6 +83,17 @@
 					              webname: "博客"
 					            };
 					            this.isLoding= true;
+								
+								//微信
+								// #ifdef APP-PLUS || H5 || MP-WEIXIN || MP-QQ 
+								let result = towxml(this.htmlText.content, 'html', {
+								          // 相对资源的base路径
+								          base: "https://www.blog.rdtalk.cn",
+								          theme: 'light', // 主题，默认`light`
+								        });
+										this.article=result;
+										console.log(result);
+								// #endif 
 				}).catch(errors => {
 					console.log(errors);
 				}).finally(() => {

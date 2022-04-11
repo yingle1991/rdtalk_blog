@@ -2,6 +2,8 @@
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
   "usingComponents": {
+    "towxml": "/wxcomponents/towxml/towxml",
+    "decode": "/wxcomponents/towxml/decode",
     "mp-html": "/components/mp-html/mp-html"
   }
 }
